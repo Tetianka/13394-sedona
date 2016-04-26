@@ -1,0 +1,14 @@
+body{
+	background-color: ghostwhite;
+}
+.container {
+	width: 768px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+.main-background {
+	background: url("/img/background-sedona.jpg") no-repeat;
+	min-height: 512px;
+}

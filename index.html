@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Седона - небольшой городок в Аризоне</title>
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -30,7 +31,9 @@
 				<img src="img/logo-sedona.png" width="138" height="70" alt="Логотип города Седона">
 			</div>
 			<div class="main-background">
-				<img class="welcome-text" src="img/welcome-sedona.png" width="458" height="352" alt="Welcome to Sedona">
+				<div class="welcome-text">
+					<img src="img/welcome-sedona.png" width="458" height="352" alt="Welcome to Sedona">
+				</div>
 			</div>
 		</header>
 		<main>
@@ -38,17 +41,17 @@
 				<h1 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			</div>
-			<div class="reason-one">
-				<div class="big-reason reson-one-text">
+			<div class="reason-one clearfix">
+				<div class="big-reason reason-one-text">
 					<h2>Настоящий городок</h2>
-					<p>№1</p>
+					<p class="reason-nmbr">№1</p>
 					<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
 				<div class="reason-one-img">
 					<img src="img/good-city.jpg" width="512" height="256" alt="Седона — настоящий городок">
 				</div>
 			</div>
-			<div class="recomendations">
+			<div class="recomendations clearfix">
 				<div class="features-item">
 					<b>Жильё</b>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -62,37 +65,38 @@
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
 			</div>
-			<div class="reason-two">
-				<div class="reson-two-img">
+			<div class="reason-two clearfix">
+				<div class="reason-two-img">
 					<img src="img/devil-bridge.jpg" width="512" height="256" alt="Гранд Каньон">
 				</div>
-				<div class="big-reason reson-two-text">
+				<div class="big-reason reason-two-text">
 					<h2>Там есть мост дьявола</h2>
-					<p>№2</p>
+					<p class="reason-nmbr">№2</p>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
 			</div>
 			<div class="other-reasons">
 				<div class="small-reason">
 					<h2>Небольшая площадь</h2>
-					<p>№3</p>
+					<p class="reason-nmbr">№3</p>
 					<p>Все достопримеча- тельности находятся очень близко</p>
 				</div>
 				<div class="small-reason">
 					<h2>Красивая дорога</h2>
-					<p>№4</p>
-					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					<p class="reason-nmbr">№4</p>
+					<p class="nmbr4">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</div>
 				<div class="small-reason">
 					<h2>Мало туристов</h2>
-					<p>№5</p>
+					<p class="reason-nmbr">№5</p>
 					<p>Большинство едет в Гранд Каньон и толпится там</p>
 				</div>
 			</div>
 			<section class="hotel-search">
 				<b class="hotel-search-title">Заинтересовались?</b>
-				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-				<button type="button" class="btn hotel">Поиск гостинницы в Седоне</button>
+				<p>Укажите предполагаемые даты поездки,
+					<br>и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+				<button type="button" class="btn hotel">Поиск гостиницы в Седоне</button>
 				<form action="#">
 					<div class="hotel-search-form">
 						<div class="field">
@@ -127,18 +131,20 @@
 				<img class="map-preview" src="img/map.jpg" width="768" height="593" alt="Карта">
 			</section>
 		</main>
-		<footer class="main-footer">
-			<section class="footer-hashtag">
-				<b class="hashtag">#visitsedona</b>
+		<footer class="main-footer clearfix">
+			<section class="footer-block">
+				<div class="hashtag">
+					<b>#visitsedona</b>
+				</div>
 			</section>
-			<section class="footer-social">
+			<section class="footer-block">
 				<div class="social-button">
 					<a class="social-btn social-btn-tw" href="#">Twitter</a>
 					<a class="social-btn social-btn-fb" href="#">Facebook</a>
 					<a class="social-btn social-btn-yout" href="#">YouTube</a>
 				</div>
 			</section>
-			<section class="footer-developer">
+			<section class="footer-block">
 				<div class="development-info">
 					<span>Website by</span>
 					<a href="http://htmlacademy.ru">

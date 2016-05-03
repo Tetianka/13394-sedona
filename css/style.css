@@ -4,7 +4,7 @@ body {
 	line-height: 21px;
 	color: #333333;
 	font-weight: 400;
-	font-family: "PT Sans Regular", "PT Sans", "Arial";
+	font-family: "PT Sans", "Arial";
 	text-transform: uppercase;
 }
 h1 {
@@ -43,12 +43,7 @@ p {
 	display: table;
 	clear: both;
 }
-.main-background {
-	background: url("/img/background-sedona.jpg") no-repeat;
-	min-height: 512px;
-}
 .main-header {
-	margin-bottom: 58px;
 	position: relative;
 }
 .main-navigation {
@@ -62,6 +57,7 @@ p {
 	color: #81b3d2;
 }
 .main-navigation a:active {
+	font-weight: 700;
 	color: #000000;
 	opacity: 0.3;
 }
@@ -90,24 +86,21 @@ p {
 	top: 0;
 	left: 50%;
 	margin-left: -69px;
-	margin-bottom: 75px;
 }
 .main-background {
-	width: 768px;
+	text-align: center;
+	background: url("/img/background-sedona.jpg") no-repeat;
+	min-height: 512px;
 	outline: 2px solid green;
 }
 .welcome-text {
-	width: 458px;
-	height: 352px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.welcome-text img {
-	margin-top: 75px;
-	outline: 2px solid red;
+	position: absolute;
+	top: 132px;
+	margin-left: -229px;
 }
 .main-title {
-	margin-bottom: 55px;
+	padding-top: 58px;
+	padding-bottom: 55px;
 	outline: 2px solid green;
 }
 .title {
@@ -160,13 +153,16 @@ p {
 	outline: 2px solid green;
 }
 .features-item {
-	width: 256px;
+	width: 164px;
+	padding-left: 46px;
+	padding-right: 46px;
 	padding-top: 160px;
 	padding-bottom: 64px;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
 	font-size: 14px;
+	background-image: url("../img/food-icon.png") no-repeat;
 	outline: 2px solid yellow;
 }
 .features-item b {
@@ -180,43 +176,43 @@ p {
 	outline: 2px solid green;
 }
 .reason-two-text {
-	float: left;
+	float: right;
 }
 .reason-two-img {
 	width: 512px;
 	height: 256px;
-	float: right;
+	float: left;
 }
 .other-reasons {
-	padding-top: 47px background-color: #eeeeee;
+	background-color: #eeeeee;
 	font-size: 0;
 	outline: 2px solid green;
 }
 .small-reason {
-	width: 256px;
+	width: 156px;
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 47px;
 	padding-bottom: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
 	text-align: center;
 	font-size: 14px;
 	outline: 2px solid yellow;
 }
 .small-reason h2 {
 	margin-bottom: 25px;
-	padding: 0 67px;
-}
-.small-reason p {
-	padding: 0 50px;
 }
 p.nmbr4 {
-	padding: 0 57px;
+	padding: 0 7px;
 }
 .hotel-search
 /*54+30+28+48+50+87 */
 
 {
+	position: relative;
 	padding-top: 54px;
+	padding-bottom: 136px;
 	text-align: center;
 	outline: 2px solid green;
 }
@@ -229,12 +225,33 @@ p.nmbr4 {
 	font-weight: 700;
 }
 .hotel-search p {
-	margin-bottom: 50px;
 	padding: 0 165px;
 	line-height: 24px;
 }
-.hotel-search-form {
-	display: none;
+.hotel-search-block {
+	width: 569px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-top: -88px;
+	margin-left: -284px;
+	background-color: rgba(255, 255, 255, 1);
+	outline: 2px solid red;
+}
+.btn {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	font-family: "PT Sans", "Arial";
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #766357;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+button.hotel {
+	padding: 32px 140px;
 }
 .map-wrapper {
 	width: 768px;
@@ -242,6 +259,9 @@ p.nmbr4 {
 	outline: 2px solid green;
 }
 .main-footer {
+	position: absolute;
+	top: 2664px;
+	background-color: rgba(255, 255, 255, 0.9);
 	outline: 2px solid green;
 }
 .footer-block {
@@ -258,4 +278,34 @@ p.nmbr4 {
 	color: #000000;
 	font-size: 21px;
 	font-weight: 700;
+}
+.social-button {
+	padding: 36px 0;
+	font-size: 0;
+}
+.social-btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 46px;
+	height: 48px;
+	margin-right: 6px;
+	background: #81b3d2 url("../img/sprite-soc.png") center no-repeat;
+}
+.social-btn:last-child {
+	margin-right: 0;
+}
+.social-btn:hover {
+	background: #669ec0;
+}
+.social-btn:active {
+	background: #5496bd;
+}
+.social-btn-tw {
+	background-position: -5px -63px;
+}
+.social-btn-fb {
+	background-position: -5px -5px;
+}
+.social-btn-yout {
+	background-position: -5px -121px;
 }

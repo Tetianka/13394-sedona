@@ -88,18 +88,20 @@ p {
 	margin-left: -69px;
 }
 .main-background {
+	padding-top: 58px;
 	text-align: center;
 	background: url("/img/background-sedona.jpg") no-repeat;
-	min-height: 512px;
+	height: 454px;
+	text-size: 0;
 	outline: 2px solid green;
 }
 .welcome-text {
-	position: absolute;
-	top: 132px;
-	margin-left: -229px;
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
 }
 .main-title {
-	padding-top: 58px;
+	padding-top: 50px;
 	padding-bottom: 55px;
 	outline: 2px solid green;
 }
@@ -258,11 +260,176 @@ button.hotel {
 	height: 593px;
 	outline: 2px solid green;
 }
+.hotel-selection {
+	font-size: 0;
+	background: url(../img/background-hotel-page.jpg) no-repeat;
+	outline: 2px solid green;
+}
+.selection-type {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	min-height: 220px;
+	outline: 2px solid red;
+}
+.infrastructure {
+	width: 256px;
+}
+.accomodation {
+	width: 225px;
+}
+.price-range {
+	width: 287px;
+}
+.result-range {
+	outline: 2px solid green;
+}
+.search-result {
+	width: 151px;
+	float: left;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 46px;
+	outline: 2px solid red;
+}
+.result-filters {
+	width: 570px;
+	float: right;
+	padding: 35px 0;
+	outline: 2px solid red;
+}
+.result-filters span,
+.result-filters ul {
+	display: block;
+	outline: 2px solid yellow;
+}
+.result-filters span {
+	width: 87px;
+	float: left;
+	padding-left: 13px;
+	font-size: 12px;
+	line-height: 18px;
+}
+.sorting {
+	width: 320px;
+	float: left;
+}
+.indicators {
+	width: 80px;
+	float: right;
+	padding-right: 46px;
+}
+.result-filters ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+	line-height: 18px;
+}
+.result-filters li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	vertical-align: top;
+}
+.result-filters a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: #cccccc;
+}
+.sorting .active {
+	color: #81b3d2;
+}
+.sorting li {
+	margin-right: 34px;
+}
+.sorting li:first-child {
+	margin-left: 28px;
+}
+.hotel-preview {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+.hotel-image {
+	width: 135px;
+	padding-left: 46px;
+	padding-right: 17px;
+	padding-top: 31px;
+	padding-bottom: 31px;
+	outline: 2px solid red;
+	float: left;
+}
+.hotel-info {
+	width: 258px;
+	padding-left: 15px;
+	padding-right: 100px;
+	padding-top: 31px;
+	padding-bottom: 31px;
+	outline: 2px solid red;
+	float: left;
+}
+.hotel-info a {} .hotel-name {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	outline: 2px solid yellow;
+}
+.hotel-marks {
+	width: 182px;
+	margin-top: 10px;
+	margin-bottom: 16px;
+	outline: 2px solid yellow;
+}
+.type-accomodation,
+.price-accomodation {
+	display: block;
+	font-size: 16px;
+	line-height: 16px;
+}
+.type-accomodation {
+	float: left;
+}
+.price-accomodation {
+	float: right;
+}
+.hotel-action {
+	min-height: 27px;
+	outline: 2px solid yellow;
+}
+.hotel-rating {
+	width: 111px;
+	padding-left: 40px;
+	padding-right: 46px;
+	padding-top: 31px;
+	padding-bottom: 31px;
+	outline: 2px solid red;
+	float: left;
+}
+.stars {
+	min-height: 18px;
+	margin-bottom: 48px;
+	outline: 2px solid yellow;
+}
+.rating-mark {
+	min-height: 27px;
+	outline: 2px solid yellow;
+}
 .main-footer {
+	outline: 2px solid green;
+}
+.index {
 	position: absolute;
 	top: 2664px;
 	background-color: rgba(255, 255, 255, 0.9);
-	outline: 2px solid green;
 }
 .footer-block {
 	width: 256px;

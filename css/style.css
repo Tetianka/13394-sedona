@@ -61,6 +61,15 @@ p {
 	color: #000000;
 	opacity: 0.3;
 }
+.main-navigation .active {
+	color: #827167;
+}
+.main-navigation .active:hover {
+	color: #604e43;
+}
+.main-navigation .active:active {
+	color: #e5e3e1;
+}
 .main-navigation ul {
 	margin: 0;
 	padding: 15px 46px;
@@ -164,8 +173,17 @@ p {
 	vertical-align: top;
 	text-align: center;
 	font-size: 14px;
-	background-image: url("../img/food-icon.png") no-repeat;
+	background: url("../img/icon-sprite.png") no-repeat;
 	outline: 2px solid yellow;
+}
+.place-item {
+	background-position: -115px -1111px;;
+}
+.food-item {
+	background-position: -115px -143px;
+}
+.souvenires-item {
+	background-position: -110px -629px;;
 }
 .features-item b {
 	display: block;
@@ -214,7 +232,6 @@ p.nmbr4 {
 {
 	position: relative;
 	padding-top: 54px;
-	padding-bottom: 136px;
 	text-align: center;
 	outline: 2px solid green;
 }
@@ -229,14 +246,12 @@ p.nmbr4 {
 .hotel-search p {
 	padding: 0 165px;
 	line-height: 24px;
+	margin-bottom: 50px;
 }
 .hotel-search-block {
 	width: 569px;
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-top: -88px;
-	margin-left: -284px;
+	margin-right: auto;
+	margin-left: auto;
 	background-color: rgba(255, 255, 255, 1);
 	outline: 2px solid red;
 }
@@ -253,7 +268,25 @@ p.nmbr4 {
 	cursor: pointer;
 }
 button.hotel {
-	padding: 32px 140px;
+	padding: 32px 0;
+	width: 100%;
+}
+.hotel-search-form {
+	position: absolute;
+	width: 460px;
+	background: #ffffff;
+	padding: 55px;
+}
+.button-search {
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 21px 0;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700px;
+	background: #81b3d2;
+	margin-top: 50px;
 }
 .map-wrapper {
 	width: 768px;
@@ -280,6 +313,14 @@ button.hotel {
 }
 .price-range {
 	width: 287px;
+}
+legend {
+	margin: 0;
+}
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
 }
 .result-range {
 	outline: 2px solid green;
@@ -342,8 +383,20 @@ button.hotel {
 	text-decoration: none;
 	color: #cccccc;
 }
-.sorting .active {
+.sorting a{
+	border-bottom: 1px dotted #81b3d2;
+}
+.sorting a:hover {
 	color: #81b3d2;
+}
+.sorting a:active {
+	color: #000000;
+	border-bottom: 1px dotted #000000;
+}
+.sorting .active,
+.sorting .active:active {
+	color: #81b3d2;
+	border-bottom: none;
 }
 .sorting li {
 	margin-right: 34px;
@@ -368,12 +421,13 @@ button.hotel {
 	width: 258px;
 	padding-left: 15px;
 	padding-right: 100px;
-	padding-top: 31px;
+	padding-top: 26px;
 	padding-bottom: 31px;
 	outline: 2px solid red;
 	float: left;
 }
-.hotel-info a {} .hotel-name {
+.hotel-info a {}
+.hotel-name {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -382,6 +436,12 @@ button.hotel {
 	font-weight: 700;
 	color: #000000;
 	outline: 2px solid yellow;
+}
+.hotel-name:hover{
+	color: #81b3d2;
+}
+.hotel-name:active{
+	color: #cacaca;
 }
 .hotel-marks {
 	width: 182px;
@@ -409,8 +469,8 @@ button.hotel {
 	width: 111px;
 	padding-left: 40px;
 	padding-right: 46px;
-	padding-top: 31px;
-	padding-bottom: 31px;
+	padding-top: 27px;
+	padding-bottom: 30px;
 	outline: 2px solid red;
 	float: left;
 }
@@ -433,13 +493,12 @@ button.hotel {
 }
 .footer-block {
 	width: 256px;
-	min-height: 120px;
 	float: left;
 	text-align: center;
 	outline: 2px solid yellow;
 }
 .hashtag {
-	padding: 47px 58px;
+	padding: 50px 58px;
 }
 .hashtag b {
 	color: #000000;
@@ -447,7 +506,7 @@ button.hotel {
 	font-weight: 700;
 }
 .social-button {
-	padding: 36px 0;
+	padding: 37px 0;
 	font-size: 0;
 }
 .social-btn {
@@ -462,17 +521,53 @@ button.hotel {
 	margin-right: 0;
 }
 .social-btn:hover {
-	background: #669ec0;
+	background: #669ec0 url("../img/sprite-soc.png") center no-repeat;
 }
 .social-btn:active {
-	background: #5496bd;
+	background: #5496bd ("../img/sprite-soc.png") center no-repeat;
 }
-.social-btn-tw {
+.social-btn-tw,
+.social-btn-tw:hover,
+.social-btn-tw:active {
 	background-position: -5px -63px;
 }
-.social-btn-fb {
+.social-btn-tw:active {
+	background-image: ;
+}
+.social-btn-fb,
+.social-btn-fb:hover {
 	background-position: -5px -5px;
 }
-.social-btn-yout {
+.social-btn-yout,
+.social-btn-yout:hover {
 	background-position: -5px -121px;
+}
+.developer {
+	padding: 40px 0;
+}
+.development-info {
+	font-size: 0;
+}
+.development-info span {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 26px;
+	margin-right: 8px;
+	padding: 7px 0;
+}
+
+.developer-logo {
+	width: 113px;
+	height: 39px;
+	display: inline-block;
+	vertical-align: center;
+	background: url("../img/htmlacademy-logo-sprite.png");
+	background-position: -5px -5px;
+}
+.developer-logo:hover {
+	background-position: -5px -103px;
+}
+.developer-logo:active {
+	background-position: -5px -54px;
 }

@@ -177,13 +177,15 @@ p {
 	outline: 2px solid yellow;
 }
 .place-item {
-	background-position: -115px -1111px;;
+	background-position: -115px -1111px;
+	;
 }
 .food-item {
 	background-position: -115px -143px;
 }
 .souvenires-item {
-	background-position: -110px -629px;;
+	background-position: -110px -629px;
+	;
 }
 .features-item b {
 	display: block;
@@ -276,6 +278,116 @@ button.hotel {
 	width: 460px;
 	background: #ffffff;
 	padding: 55px;
+}
+.field {
+	width: 100%;
+	text-align: left;
+	font-size: 0;
+	margin-bottom: 30px;
+	position: relative;
+}
+.field label {
+	display: inline-block;
+	vertical-align: center;
+	width: 115px;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	padding: 11px 0;
+	outline: 1px solid red;
+}
+.field input {
+	display: inline-block;
+	vertical-align: center;
+	width: 329px;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	padding: 10px 0;
+	padding-left: 16px;
+	border: none;
+	outline: 1px solid red;
+	background: #f2f2f2;
+}
+.field .calendar {
+	position: absolute;
+	top: 10px;
+	left: 430px;
+	border: none;
+	outline: none;
+	width: 21px;
+	height: 22px;
+	background: url("../img/calendar-icon.png") center no-repeat;
+}
+.people {
+	width: 100%;
+	text-align: left;
+	position: relative;
+}
+.adults {
+	width: 230px;
+	float: left;
+}
+.children {
+	width: 180px;
+	float: right;
+}
+.number-field {
+	font-size: 0;
+}
+.number-field label,
+.number-field input {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	padding: 10px 0;
+}
+.number-field input {
+	width: 114px;
+	border: none;
+	outline: 1px solid red;
+	background: #f2f2f2;
+	text-align: center;
+}
+.adults label {
+	width: 115px;
+}
+.children label {
+	width: 66px;
+}
+.number-field .decrease-btn,
+.number-field .increase-btn {
+	border: none;
+	outline: none;
+}
+.decrease-btn {
+	position: absolute;
+	width: 12px;
+	height: 3px;
+	background: url("../img/minus-icon.png") no-repeat center;
+}
+.adults .decrease-btn {
+	top: 19px;
+	left: 126px;
+}
+.children .decrease-btn {
+	top: 19px;
+	left: 360px;
+}
+.increase-btn {
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	background: url("../img/plus-icon.png") no-repeat center;
+}
+.adults .increase-btn {
+	top: 16px;
+	left: 202px;
+}
+.children .increase-btn {
+	top: 16px;
+	left: 435px;
 }
 .button-search {
 	width: 100%;
@@ -383,7 +495,7 @@ fieldset {
 	text-decoration: none;
 	color: #cccccc;
 }
-.sorting a{
+.sorting a {
 	border-bottom: 1px dotted #81b3d2;
 }
 .sorting a:hover {
@@ -426,8 +538,7 @@ fieldset {
 	outline: 2px solid red;
 	float: left;
 }
-.hotel-info a {}
-.hotel-name {
+.hotel-info a {} .hotel-name {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -437,10 +548,10 @@ fieldset {
 	color: #000000;
 	outline: 2px solid yellow;
 }
-.hotel-name:hover{
+.hotel-name:hover {
 	color: #81b3d2;
 }
-.hotel-name:active{
+.hotel-name:active {
 	color: #cacaca;
 }
 .hotel-marks {
@@ -556,7 +667,6 @@ fieldset {
 	margin-right: 8px;
 	padding: 7px 0;
 }
-
 .developer-logo {
 	width: 113px;
 	height: 39px;

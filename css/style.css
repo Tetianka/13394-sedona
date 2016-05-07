@@ -6,6 +6,7 @@ body {
 	font-weight: 400;
 	font-family: "PT Sans", "Arial";
 	text-transform: uppercase;
+	position: relative;
 }
 h1 {
 	margin: 0;
@@ -91,6 +92,8 @@ p {
 	text-align: right;
 }
 .main-logo {
+	width: 138px;
+	height: 70px;
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -101,7 +104,6 @@ p {
 	text-align: center;
 	background: url("/img/background-sedona.jpg") no-repeat;
 	height: 454px;
-	text-size: 0;
 	outline: 2px solid green;
 }
 .welcome-text {
@@ -115,19 +117,25 @@ p {
 	outline: 2px solid green;
 }
 .title {
-	padding: 0 165px;
+	max-width: 438px;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 35px;
 	outline: 2px solid red;
 }
 .main-title p {
 	margin: 0;
 	color: #333333;
-	padding: 0 140px;
+	max-width: 488px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 	outline: 2px solid red;
 }
 .reason-one {
+	position: relative;
+	min-height: 258px;
 	outline: 2px solid green;
 }
 .big-reason {
@@ -140,6 +148,8 @@ p {
 }
 .reason-one-text {
 	float: left;
+	position: relative;
+	z-index: 100;
 }
 .big-reason h2 {
 	padding: 0 52px;
@@ -155,9 +165,16 @@ p {
 	margin-bottom: 25px;
 }
 .reason-one-img {
-	width: 512px;
-	height: 256px;
-	float: right;
+	width: auto;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+.reason-one-img img {
+	width: auto;
+	height: 100%;
 }
 .recomendations {
 	font-size: 0;
@@ -185,7 +202,6 @@ p {
 }
 .souvenires-item {
 	background-position: -110px -629px;
-	;
 }
 .features-item b {
 	display: block;
@@ -195,15 +211,23 @@ p {
 	margin-bottom: 25px;
 }
 .reason-two {
+	position: relative;
+	min-height: 258px;
 	outline: 2px solid green;
 }
 .reason-two-text {
 	float: right;
+	position: relative;
+	z-index: 100;
 }
 .reason-two-img {
-	width: 512px;
-	height: 256px;
-	float: left;
+	position: absolute;
+	width: auto;
+	height: 100%;
+}
+.reason-two-img img {
+	width: auto;
+	height: 100%;
 }
 .other-reasons {
 	background-color: #eeeeee;
@@ -414,7 +438,6 @@ button.hotel {
 	display: inline-block;
 	vertical-align: top;
 	font-size: 14px;
-	min-height: 220px;
 	outline: 2px solid red;
 }
 .infrastructure {
@@ -517,22 +540,22 @@ fieldset {
 	margin-left: 28px;
 }
 .hotel-preview {
+	padding-left: 46px;
+	padding-right: 46px;
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
 }
 .hotel-image {
 	width: 135px;
-	padding-left: 46px;
-	padding-right: 17px;
 	padding-top: 31px;
 	padding-bottom: 31px;
 	outline: 2px solid red;
 	float: left;
 }
 .hotel-info {
-	width: 258px;
+	width: 343px;
 	padding-left: 15px;
-	padding-right: 100px;
+	padding-right: 32px;
 	padding-top: 26px;
 	padding-bottom: 31px;
 	outline: 2px solid red;
@@ -555,31 +578,28 @@ fieldset {
 	color: #cacaca;
 }
 .hotel-marks {
-	width: 182px;
+	margin: 0;
+	padding: 0;
 	margin-top: 10px;
 	margin-bottom: 16px;
+	font-size: 0;
+	line-height: 0;
 	outline: 2px solid yellow;
 }
 .type-accomodation,
 .price-accomodation {
-	display: block;
+	width: 116px;
+	display: inline-block;
 	font-size: 16px;
-	line-height: 16px;
-}
-.type-accomodation {
-	float: left;
-}
-.price-accomodation {
-	float: right;
+	line-height: 21px;
 }
 .hotel-action {
 	min-height: 27px;
 	outline: 2px solid yellow;
 }
 .hotel-rating {
-	width: 111px;
-	padding-left: 40px;
-	padding-right: 46px;
+	width: 151px;
+	text-align: right;
 	padding-top: 27px;
 	padding-bottom: 30px;
 	outline: 2px solid red;
@@ -597,9 +617,9 @@ fieldset {
 .main-footer {
 	outline: 2px solid green;
 }
-.index {
+.footer-index {
 	position: absolute;
-	top: 2664px;
+	bottom: 0;
 	background-color: rgba(255, 255, 255, 0.9);
 }
 .footer-block {

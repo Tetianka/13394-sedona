@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Отели в Седоне</title>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
@@ -57,7 +58,7 @@
 						<fieldset class="type-accomodation">
 							<legend>Тип жилья:</legend>
 							<p>
-								<input type="checkbox" checked name="accomodation" id="checked-hotel" value="hotel">
+								<input type="checkbox" name="accomodation" id="checked-hotel" value="hotel">
 								<label for="checked-hotel">Гостиница</label>
 							</p>
 							<p>
@@ -75,12 +76,17 @@
 							<span>Стоимость в сутки (р):</span>
 						</p>
 						<div class="price-control">
-							от
-							<input class="min-price" type="text" value="0">до
-							<input class="max-price" type="text" value="3000">
+							<label class="min-price">от
+								<input name="min-price" type="text" value="0">
+							</label>
+							<label class="max-price">до
+								<input name="max-price" type="text" value="3000">
+							</label>
 						</div>
 						<div class="range-controls">
-							<div class="bar"></div>
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
 							<div class="toggle min-toggle"></div>
 							<div class="toggle max-toggle"></div>
 						</div>
@@ -107,10 +113,10 @@
 					</ul>
 					<ul class="indicators">
 						<li>
-							<a href="#">.</a>
+							<a class="up" href="#"></a>
 						</li>
 						<li>
-							<a href="#">.</a>
+							<a class="down active" href="#"></a>
 						</li>
 					</ul>
 				</div>
@@ -127,16 +133,16 @@
 							<span class="price-accomodation">От 3500 р.</span>
 						</div>
 						<div class="hotel-action">
-							<a href="#">Подробнее</a>
-							<a href="#">Забронировать</a>
+							<a class="btn-action more" href="#">Подробнее</a>
+							<a class="btn-action book" href="#">Забронировать</a>
 						</div>
 					</div>
 					<div class="hotel-rating">
 						<div class="stars">
 							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
+							<span class="star two"></span>
+							<span class="star three"></span>
+							<span class="star four"></span>
 						</div>
 						<div class="rating-mark">
 							<span>Рейтинг: 8,5</span>
@@ -154,14 +160,14 @@
 							<span class="price-accomodation">От 2000 р.</span>
 						</div>
 						<div class="hotel-action">
-							<a href="#">Подробнее</a>
-							<a href="#">Забронировать</a>
+							<a class="btn-action more" href="#">Подробнее</a>
+							<a class="btn-action book" href="#">Забронировать</a>
 						</div>
 					</div>
 					<div class="hotel-rating">
 						<div class="stars">
 							<span class="star"></span>
-							<span class="star"></span>
+							<span class="star two"></span>
 						</div>
 						<div class="rating-mark">
 							<span>Рейтинг: 8,9</span>
@@ -179,15 +185,15 @@
 							<span class="price-accomodation">От 4000 р.</span>
 						</div>
 						<div class="hotel-action">
-							<a href="#">Подробнее</a>
-							<a href="#">Забронировать</a>
+							<a class="btn-action more" href="#">Подробнее</a>
+							<a class="btn-action book" href="#">Забронировать</a>
 						</div>
 					</div>
 					<div class="hotel-rating">
 						<div class="stars">
 							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
+							<span class="star two"></span>
+							<span class="star three"></span>
 						</div>
 						<div class="rating-mark">
 							<span>Рейтинг: 9,2</span>

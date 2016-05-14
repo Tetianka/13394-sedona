@@ -37,6 +37,7 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #ffffff;
+	box-shadow: 0 0 6px 0 #dedede;
 }
 .clearfix::after {
 	content: "";
@@ -46,7 +47,7 @@ p {
 .main-header {
 	position: relative;
 }
-.main-navigation {} .main-navigation a {
+.main-navigation a {
 	color: #000000;
 	text-decoration: none;
 }
@@ -643,7 +644,7 @@ button.hotel {
 }
 .price-range {
 	margin-top: 28px;
-	width: 222px;
+	width: 224px;
 	color: #ffffff;
 }
 .price-range span {
@@ -685,7 +686,7 @@ button.hotel {
 }
 .price-control .min-price,
 .price-control .max-price {
-	width: 79px;
+	width: 80px;
 }
 .price-control .min-price {
 	padding-left: 39px;
@@ -738,14 +739,14 @@ button.hotel {
 }
 .btn-show {
 	display: block;
-	width: 133px;
+	width: 138px;
 	margin: 0 auto;
 	padding-top: 6px;
 	padding-bottom: 6px;
 	text-align: center;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 21px;
-	font-weight: 700;
+	font-weight: 400;
 	color: #ffffff;
 	background: transparent;
 	border: 2px solid #ffffff;
@@ -796,96 +797,7 @@ fieldset {
 	width: 320px;
 	float: left;
 }
-.indicators {
-	width: 26px;
-	float: right;
-	font-size: 0;
-	text-align: right;
-	position: relative;
-}
-.indicators a {
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-	margin-right: 6px;
-}
-.indicators .up::before {
-	content: "";
-	position: absolute;
-	top: 2px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 5.5px 10px 5.5px;
-	border-color: transparent transparent #cccccc transparent;
-}
-.indicators .up:hover::before {
-	content: "";
-	position: absolute;
-	top: 2px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 5.5px 10px 5.5px;
-	border-color: transparent transparent #000000 transparent;
-}
-.indicators .up:active::before {
-	content: "";
-	position: absolute;
-	top: 2px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 5.5px 10px 5.5px;
-	border-color: transparent transparent #81b3d2 transparent;
-}
-.indicators .down.active:before {
-	content: "";
-	position: absolute;
-	top: 2px;
-	right: 0;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 10px 5.5px 0 5.5px;
-	border-color: #81b3d2 transparent transparent transparent;
-}
-.indicators .down::before {
-	content: "";
-	position: absolute;
-	top: 2px;
-	right: 0;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 10px 5.5px 0 5.5px;
-	border-color: #cccccc transparent transparent transparent;
-}
-.indicators .down:hover::before {
-	content: "";
-	position: absolute;
-	top: 2px;
-	right: 0;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 10px 5.5px 0 5.5px;
-	border-color: #000000 transparent transparent transparent;
-}
-.indicators .down:active::before {
-	content: "";
-	position: absolute;
-	top: 2px;
-	right: 0;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 10px 5.5px 0 5.5px;
-	border-color: #81b3d2 transparent transparent transparent;
-}
+
 .result-filters ul {
 	margin: 0;
 	padding: 0;
@@ -926,6 +838,104 @@ fieldset {
 }
 .sorting li:first-child {
 	margin-left: 28px;
+}
+.indicators {
+	width: 46px;
+	float: right;
+	text-align: right;
+
+}
+.indicators ul {
+	font-size: 0;
+}
+.indicators li {
+	width: 11px;
+	display: inline-block;
+	margin-right: 8px;
+}
+.indicators li:last-child {
+	margin-right: 0;
+}
+.indicators a {
+	padding: 0 11px;
+	position: relative;
+}
+.indicators .up::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 5.5px 10px 5.5px;
+	border-color: transparent transparent #cccccc transparent;
+}
+.indicators .up:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 5.5px 10px 5.5px;
+	border-color: transparent transparent #000000 transparent;
+}
+.indicators .up:active::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 5.5px 10px 5.5px;
+	border-color: transparent transparent #81b3d2 transparent;
+}
+.indicators .down.active:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 5.5px 0 5.5px;
+	border-color: #81b3d2 transparent transparent transparent;
+}
+.indicators .down::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 5.5px 0 5.5px;
+	border-color: #cccccc transparent transparent transparent;
+}
+.indicators .down:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 5.5px 0 5.5px;
+	border-color: #000000 transparent transparent transparent;
+}
+.indicators .down:active::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 5.5px 0 5.5px;
+	border-color: #81b3d2 transparent transparent transparent;
 }
 .hotel-preview {
 	padding-left: 46px;
@@ -975,16 +985,17 @@ fieldset {
 	margin: 0;
 	padding: 0;
 	margin-top: 5px;
-	margin-bottom: 13px;
+	margin-bottom: 15px;
 	font-size: 0;
 	line-height: 0;
 }
 .type-accomodation,
 .price-accomodation {
-	width: 116px;
+	width: 110px;
 	display: inline-block;
 	font-size: 16px;
 	line-height: 21px;
+	margin-right: 6px;
 }
 .hotel-action {
 	font-size: 0;
@@ -1035,9 +1046,18 @@ fieldset {
 	float: left;
 }
 .stars {
-	min-height: 18px;
-	margin-bottom: 47px;
+	min-height: 17px;
+	margin-bottom: 39px;
+}
+.star {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 7px;
 	position: relative;
+}
+.star:last-child {
+	margin-right: 0;
 }
 .star::before {
 	content: "";
@@ -1049,18 +1069,7 @@ fieldset {
 	background: url("../img/icons/sprite.png");
 	background-position: -249px -150px;
 }
-.star.two::before {
-	top: 0;
-	right: 24px;
-}
-.star.three::before {
-	top: 0;
-	right: 48px;
-}
-.star.four::before {
-	top: 0;
-	right: 72px;
-}
+
 .rating-mark {
 	display: inline-block;
 	width: 112px;
@@ -1107,39 +1116,40 @@ fieldset {
 }
 .social-btn-tw {
 	background: #81b3d2 url("../img/icons/sprite.png") center no-repeat;
-	background-position: -51px -251px;
+	background-position: -51px -250px;
 }
 .social-btn-tw:hover {
 	background: #669ec0 url("../img/icons/sprite.png") center no-repeat;
-	background-position: -51px -251px;
+	background-position: -51px -250px;
 }
 .social-btn-tw:active {
 	background: #5496bd url("../img/icons/sprite.png");
-	background-position: -51px -251px;
+	background-position: -51px -250px;
 }
 .social-btn-fb {
 	background: #81b3d2 url("../img/icons/sprite.png") center no-repeat;
-	background-position: -99px -252px;
+	background-position: -100px -250px;
 }
 .social-btn-fb:hover {
 	background: #669ec0 url("../img/icons/sprite.png") center no-repeat;
-	background-position: -99px -252px;
+	background-position: -100px -250px;
 }
 .social-btn-fb:active {
 	background: #5496bd url("../img/icons/sprite.png");
-	background-position: -99px -252px;
+	background-position: -100px -250px;
 }
 .social-btn-yout {
 	background: #81b3d2 url("../img/icons/sprite.png") center no-repeat;
-	background-position: -151px -251px;
+	background-position: -150px -250px;
 }
 .social-btn-yout:hover {
 	background: #669ec0 url("../img/icons/sprite.png") center no-repeat;
-	background-position: -151px -251px;
+	background-position: -150px -250px;
 }
 .social-btn-yout:active {
 	background: #5496bd url("../img/icons/sprite.png");
-	background-position: -151px -251px;
+	background-position: -150px -250px;
+	opacity: 0.7;
 }
 .developer {
 	padding: 40px 0;

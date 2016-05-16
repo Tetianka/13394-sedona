@@ -402,17 +402,19 @@ p.nmbr4 {
 	padding: 0;
 }
 .calendar-date input:hover {
+	outline: none;
 	border: 3px solid #ebebeb;
 	background: #ebebeb;
 }
 .calendar-date input:focus {
+	outline: none;
 	border: 3px solid #e5e5e5;
 	background: #ffffff;
 }
 .calendar-date .calendar {
 	position: absolute;
 	top: 7px;
-	right: 5px;
+	right: 10px;
 	border: none;
 	outline: none;
 	width: 21px;
@@ -469,6 +471,7 @@ p.nmbr4 {
 	text-align: center;
 }
 .quantity input:focus {
+	outline: none;
 	border: 3px solid #e5e5e5;
 	background: #ffffff;
 }

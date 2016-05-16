@@ -370,7 +370,6 @@ p.nmbr4 {
 	font-size: 0;
 	text-align: left;
 	min-height: 38px;
-	position: relative;
 }
 .field label {
 	display: inline-block;
@@ -381,8 +380,12 @@ p.nmbr4 {
 	text-transform: uppercase;
 	margin-right: 15px;
 }
-.field input {
+.calendar-date {
 	display: inline-block;
+	width: 344px;
+	position: relative;
+}
+.calendar-date input {
 	width: 294px;
 	font-size: 14px;
 	line-height: 26px;
@@ -395,19 +398,19 @@ p.nmbr4 {
 	border: none;
 	background: #f2f2f2;
 }
-.field button {
+.calendar-date button {
 	margin: 0;
 	padding: 0;
 }
-.field input:hover {
+.calendar-date input:hover {
 	border: none;
 	background: #ebebeb;
 }
-.field input:focus {
+.calendar-date input:focus {
 	outline: 3px solid #e5e5e5;
 	background: #ffffff;
 }
-.field .calendar {
+.calendar-date .calendar {
 	position: absolute;
 	top: 7px;
 	right: 9px;
@@ -465,6 +468,9 @@ p.nmbr4 {
 	border: none;
 	background: #f2f2f2;
 	text-align: center;
+}
+.quantity input:focus {
+	outline: 3px solid #a9a9a9;
 }
 .adults label {
 	width: 112px;
@@ -585,6 +591,7 @@ p.nmbr4 {
 	color: #ffffff;
 }
 .selection-type label {
+	display: block;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
@@ -621,7 +628,7 @@ p.nmbr4 {
 .accomodation label:before {
 	content: "";
 	position: absolute;
-	top: -5px;
+	top: 0;
 	left: -1px;
 	width: 22px;
 	height: 22px;
@@ -632,7 +639,7 @@ p.nmbr4 {
 .accomodation input[type="checkbox"]:checked + label:before {
 	content: "";
 	position: absolute;
-	top: -5px;
+	top: 0;
 	left: -1px;
 	width: 26px;
 	height: 22px;
@@ -643,7 +650,7 @@ p.nmbr4 {
 .accomodation input[type="checkbox"]:disabled + label:before {
 	content: "";
 	position: absolute;
-	top: -5px;
+	top: 0;
 	left: -1px;
 	width: 26px;
 	height: 22px;
@@ -713,7 +720,7 @@ p.nmbr4 {
 }
 .range-controls {
 	position: relative;
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 	margin-left: 5px;
 }
 .range-controls .scale {
@@ -749,8 +756,8 @@ p.nmbr4 {
 	display: block;
 	width: 138px;
 	margin: 0 auto;
-	padding-top: 6px;
-	padding-bottom: 6px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	text-align: center;
 	font-size: 14px;
 	line-height: 21px;
@@ -798,8 +805,9 @@ fieldset {
 	width: 87px;
 	float: left;
 	padding-left: 0px;
-	font-size: 12px;
-	line-height: 18px;
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: lowercase;
 }
 .sorting {
 	width: 320px;
@@ -833,7 +841,7 @@ fieldset {
 }
 .sorting a:active {
 	color: #000000;
-	border-bottom: 1px dotted #000000;
+	border-bottom: none;
 }
 .sorting .active,
 .sorting .active:active {

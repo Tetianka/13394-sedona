@@ -366,10 +366,9 @@ p.nmbr4 {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 	font-size: 0;
 	text-align: left;
-	min-height: 38px;
 }
 .field label {
 	display: inline-block;
@@ -382,20 +381,20 @@ p.nmbr4 {
 }
 .calendar-date {
 	display: inline-block;
-	width: 344px;
+	width: 340px;
 	position: relative;
 }
 .calendar-date input {
-	width: 294px;
+	width: 290px;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding-top: 5px;
+	padding-top: 4px;
 	padding-left: 10px;
 	padding-right: 40px;
-	padding-bottom: 5px;
-	border: none;
+	padding-bottom: 3px;
+	border: 3px solid #f2f2f2;
 	background: #f2f2f2;
 }
 .calendar-date button {
@@ -403,17 +402,17 @@ p.nmbr4 {
 	padding: 0;
 }
 .calendar-date input:hover {
-	border: none;
+	border: 3px solid #ebebeb;
 	background: #ebebeb;
 }
 .calendar-date input:focus {
-	outline: 3px solid #e5e5e5;
+	border: 3px solid #e5e5e5;
 	background: #ffffff;
 }
 .calendar-date .calendar {
 	position: absolute;
 	top: 7px;
-	right: 9px;
+	right: 5px;
 	border: none;
 	outline: none;
 	width: 21px;
@@ -461,16 +460,17 @@ p.nmbr4 {
 	position: relative;
 }
 .quantity input {
-	width: 38px;
-	height: 34px;
-	padding-left: 38px;
-	padding-right: 38px;
-	border: none;
+	width: 36px;
+	height: 28px;
+	padding-left: 36px;
+	padding-right: 36px;
+	border: 3px solid #f2f2f2;
 	background: #f2f2f2;
 	text-align: center;
 }
 .quantity input:focus {
-	outline: 3px solid #a9a9a9;
+	border: 3px solid #e5e5e5;
+	background: #ffffff;
 }
 .adults label {
 	width: 112px;
@@ -490,7 +490,7 @@ p.nmbr4 {
 	top: 0;
 	left: 0;
 	width: 38px;
-	height: 34px;
+	height: 35px;
 	background: transparent url("../img/icons/sprite.png");
 }
 .decrease-btn::before {
